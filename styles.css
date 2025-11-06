@@ -7,13 +7,26 @@
     font-display: swap;
 }
 
+
+:root {
+    --accent-color: #596D48;
+    --input-border-color: #E5E7EB;
+    --invalid-input-border-color: red;
+    --selected-input-border-color: blue;
+
+}
+
 body {
     margin: 0;
     padding: 0;
 
     height: 100vh;
     display: flex;
+
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+/* ASIDE STYLES */
 
 aside {
     display: flex;
@@ -23,6 +36,7 @@ aside {
 
     height: inherit;
     flex: 1 1 0;
+
     background-image: url('imgs/aside.jpg');
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -57,6 +71,12 @@ aside a:hover {
     color: white;
 }
 
+/* SECTION STYLES */
+
 section {
     flex: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
